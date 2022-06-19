@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
+
+:root {
+	--color-black: #000;
+	--color-white: #fff;
+	--color-darkgray: #252525;
+	--color-gray: #757575;
+}
+
+.bg-darkgray {
+	background-color: var(--color-darkgray);
+}
+
+.bg-gray {
+	background-color: var(--color-gray);
+}
+
+.text-gray {
+	color: var(--color-gray) !important;
+}
+
+.brand-logo {
+	height: 2em;
+}
+
+.font-orbitron {
+	font-family: 'Orbitron', sans-serif;
+}
+
+#hero .container {
+	height: 100% !important;
+}
+
+.hero-content {
+	width: 100%;
+}
+
+.aspect-ratio-5-2 {
+	aspect-ratio: 5/2;
+}
+
+.object-center {
+	object-fit: cover;
+	object-position: center;
+}
+
+.aspect-ratio-16-9 {
+	aspect-ratio: 16/9;
+}
+
+.background-center {
+	background-size: cover;
+	background-position: center;
+}
+
+.catalogue-brand {
+	width: 10em;
+	bottom: 2em;
+	left: 2em;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.opacity-40 {
+	opacity: 0.4;
+}
+
+.vertical-line {
+	height: 2em;
+	width: 2px;
+	background-color: var(--color-gray);
+}
+
+@media (min-width: 992px) {
+	.hero-content {
+		width: 30%;
+	}
+}
+
+#hero {
+	height: 85vh;
+	background-size: cover;
+	background-position: bottom;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.7)
+		),
+		url('../img/hero.jpg');
+}
+
+#catalogue {
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.7)
+		),
+		url('../img/catalogue.jpg');
+}
